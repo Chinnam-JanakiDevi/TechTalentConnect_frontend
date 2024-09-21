@@ -1,0 +1,86 @@
+/* General table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+/* Table header styling */
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Zebra striping for rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive styling for mobile devices */
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide the table headers for mobile */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /* Each table row should have a margin and display like a block */
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Add labels to each data cell */
+    td {
+        display: block;
+        text-align: right;
+        font-size: 14px;
+        padding-left: 50%;
+        position: relative;
+        border: none;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+        font-size: 14px;
+        color: #333;
+    }
+}
+
+/* Adjust font size for smaller screens */
+@media screen and (max-width: 480px) {
+    th, td {
+        font-size: 14px;
+    }
+}

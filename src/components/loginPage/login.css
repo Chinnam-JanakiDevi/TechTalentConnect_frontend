@@ -1,0 +1,77 @@
+.new {
+  text-align: center;
+  padding: 6px 0 0 0;
+}
+
+.new .acc {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.body3 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #D8EFD3; */
+  /* background-image:url("https://images.unsplash.com/photo-1660211983492-9df0c82ba9ae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-image: url("https://wallpapers.com/images/hd/cyan-background-fshpzdmn975vkq30.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(252, 244, 244, 0.5);
+  /* Add a semi-transparent layer */
+  z-index: 1;
+  /* Ensure it covers the background but stays behind content */
+}
+
+.body3 * {
+  position: relative;
+  z-index: 2;
+  /* Ensure all child elements are above the overlay */
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: inset -2px 2px 2px #fff;
+  background: linear-gradient(45deg, white, rgb(255, 255, 255));
+}
+
+.login-type select{
+  border: 1.5px solid #55AD9B;
+}
+.rainbow-title {
+  display: flex;
+  justify-content: center;
+  font-size: 2em; /* Adjust as necessary */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+.rainbow-letter {
+  transition: color 0.5s ease;
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+/* Define colors for each letter */
+.letter-0 { color: red; }
+.letter-1 { color: orange; }
+.letter-2 { color: rgb(255, 0, 234); }
+.letter-3 { color: green; }
+.letter-4 { color: blue; }
+.letter-5 { color: indigo; }
+.letter-6 { color: violet; }

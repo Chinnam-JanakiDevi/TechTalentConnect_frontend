@@ -1,0 +1,55 @@
+/* The CSS of this is same from the ProfReg.css so i didn't write the css here again */
+.msg{
+    color: red;
+}
+
+.reg-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;  /* Center the buttons */
+    gap: 20px;  /* Add some space between the buttons */
+    margin-left: 0;  /* Align the buttons in the center */
+    transform: scale(1.1);
+    color: #32a38c;
+}
+
+.reg-buttons button {
+    background-color: #55AD9B;
+    padding: 0;  /* No padding so the icon stays centered */
+    width: 50px;  /* Fixed width to make the button circular */
+    height: 50px;  /* Fixed height equal to width */
+    border-radius: 50%;  /* This makes the button circular */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;  /* Smooth hover effect */
+    cursor: pointer;
+}
+
+.reg-buttons button:hover {
+    background-color: #32a38c;
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+}
+
+.reg-buttons svg {
+    font-size: 24px;  /* Adjust the icon size */
+    color: white;
+}
+
+
+.nav-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* background-color: #4CAF50; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-btn:hover {
+    background-color: #32a38c;
+
+}

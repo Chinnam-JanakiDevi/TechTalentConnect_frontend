@@ -1,0 +1,136 @@
+/* General reset and styling */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url("https://wallpapers.com/images/hd/cyan-background-fshpzdmn975vkq30.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .wrapper {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: inset -2px 2px 2px #fff;
+  background: linear-gradient(45deg, #55AD9B, rgb(160, 63, 79));
+} */
+
+.wrapper .title {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 5px;
+  color: #fff;
+  text-shadow: 2px 2px 2px #222;
+  border-bottom: 1px solid #fff;
+}
+
+.wrapper .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.input-box:nth-child(2n) {
+  justify-content: end;
+}
+
+.input-box label {
+  width: 95%;
+  color: hsl(0, 0%, 3%);
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.input-box input, select, textarea {
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1.5px solid #55AD9B; /* Consistent border for all input fields */
+  padding: 0 10px;
+}
+
+.input-box select{
+  border: 1.5px solid #55AD9B; /* Consistent border for all input fields */
+
+}
+
+textarea {
+  height: auto;
+  padding: 10px;
+  resize: vertical;
+}
+
+.btn1 input {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  font-size: 18px;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  /* background:#0eca95c5; */
+  background-color: #55AD9B;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn1 input:hover {
+  background-color: #1c8f78;
+}
+
+#textarea {
+  border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+  .wrapper {
+    min-width: 280px;
+  }
+
+  .input-box {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .input-box:nth-child(2n) {
+    justify-content: space-between;
+  }
+
+  .input-box input, select, textarea {
+    width: 100%;
+  }
+
+  .info {
+    max-height: 370px;
+    overflow: auto;
+  }
+
+  .info::-webkit-scrollbar {
+    width: 0;
+  }
+}
