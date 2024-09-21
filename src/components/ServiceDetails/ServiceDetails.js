@@ -151,7 +151,7 @@ const ServiceDetails = () => {
                   //   alt={`Image ${imgIndex}`}
                   //   className="service-image"
                   // />
-                  <img src='/mehandhi.jpg'></img>
+                  <img src='/mehandhi.jpg' className="service-image"></img>
                 ))
               ) : (
                 <p>No images available</p>
