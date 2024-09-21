@@ -35,7 +35,7 @@ const UserReg = () => {
             if (password != confirmPassword) {
 
             }
-            const response = await axios.post('http://localhost:5000/userReg', data);
+            const response = await axios.post('https://techtalentconnectbackend.vercel.app/userReg', data);
             console.log(response.data); // Handle the response
             setTimeout(() => {
                 setMessage('Registration successful');

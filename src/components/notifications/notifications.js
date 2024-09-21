@@ -211,7 +211,7 @@ const Notifications = () => {
     const fetchNotifications = async () => {
         try {
             if (data) {
-                const response = await axios.get(`http://localhost:5000/getNotifications/${data}`);
+                const response = await axios.get(`https://techtalentconnectbackend.vercel.app/getNotifications/${data}`);
                 setNotifications(response.data);
             }
         } catch (error) {
@@ -237,7 +237,7 @@ const Notifications = () => {
 
     const handleAccept = async (notification) => {
         try {
-            await axios.post('http://localhost:5000/acceptBooking', {
+            await axios.post('https://techtalentconnectbackend.vercel.app/acceptBooking', {
                 userEmail: notification.userEmail
             });
             console.log('Booking accepted');
@@ -256,7 +256,7 @@ const Notifications = () => {
 
     const handleReject = async (notification) => {
         try {
-            await axios.post('http://localhost:5000/rejectBooking', {
+            await axios.post('https://techtalentconnectbackend.vercel.app/rejectBooking', {
                 userEmail: notification.userEmail
             });
             console.log('Booking rejected');

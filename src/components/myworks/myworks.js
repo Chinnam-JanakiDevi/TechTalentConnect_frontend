@@ -100,7 +100,7 @@ export const Myworks = () => {
     useEffect(() => {
         const fetchAcceptedWorks = async () => {
             try {
-                const response = await axios.post('http://localhost:5000/myworks', { profEmail });
+                const response = await axios.post('https://techtalentconnectbackend.vercel.app/myworks', { profEmail });
                 setAcceptedWorks(response.data); // Set the accepted works in state
             } catch (error) {
                 console.error('Error fetching accepted works:', error);

@@ -203,7 +203,7 @@ const AShorts = () => {
     useEffect(() => {
         const fetchVideoData = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/demovideos'); // Fetch demo videos from backend
+                const response = await axios.get('https://techtalentconnectbackend.vercel.app/api/demovideos'); // Fetch demo videos from backend
                 const videos = response.data.map(item => item.demoVideos).flat(); // Flatten the array of demoVideos
                 setVideoData(videos);
                 setReactions(videos.map(() => ({ liked: false, disliked: false })));

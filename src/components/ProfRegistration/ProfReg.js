@@ -67,7 +67,7 @@ const ProfReg = () => {
         files.demoVideos.forEach(video => data.append('demoVideos', video));
 
         try {
-            const response = await axios.post('http://localhost:5000/ProfReg', data, {
+            const response = await axios.post('https://techtalentconnectbackend.vercel.app/ProfReg', data, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

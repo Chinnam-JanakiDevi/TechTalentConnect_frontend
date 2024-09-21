@@ -27,7 +27,7 @@ const ServiceDetails = () => {
   useEffect(() => {
     const fetchServiceDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/service/${name}`);
+        const response = await axios.get(`https://techtalentconnectbackend.vercel.app/service/${name}`);
         const data = response.data;
         setServices(Array.isArray(data) ? data : [data]);
         setFilteredServices(Array.isArray(data) ? data : [data]);
@@ -147,7 +147,7 @@ const ServiceDetails = () => {
                 service.demoImages.map((image, imgIndex) => (
                   <img
                     key={imgIndex}
-                    src={`http://localhost:5000/uploads/${image}`}
+                    src={`https://techtalentconnectbackend.vercel.app/uploads/${image}`}
                     alt={`Image ${imgIndex}`}
                     className="service-image"
                   />

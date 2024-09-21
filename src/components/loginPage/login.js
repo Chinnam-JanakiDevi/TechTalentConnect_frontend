@@ -297,7 +297,7 @@ const Login = () => {
         const route = loginType === 'user' ? '/ulogin' : '/Plogin';
 
         try {
-            const response = await axios.post(`http://localhost:5000${route}`, data);
+            const response = await axios.post(`https://techtalentconnectbackend.vercel.app/${route}`, data);
             console.log(response.data); // Handle the response
             setMessage('Login successful');
             if (route === '/ulogin') {
