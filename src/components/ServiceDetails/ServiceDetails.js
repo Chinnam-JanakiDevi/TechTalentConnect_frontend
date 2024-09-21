@@ -145,12 +145,13 @@ const ServiceDetails = () => {
               {/* <h4>Images:</h4> */}
               {service.demoImages && service.demoImages.length > 0 ? (
                 service.demoImages.map((image, imgIndex) => (
-                  <img
-                    key={imgIndex}
-                    src={`https://techtalentconnectbackend.vercel.app/uploads/${image}`}
-                    alt={`Image ${imgIndex}`}
-                    className="service-image"
-                  />
+                  // <img
+                  //   key={imgIndex}
+                  //   src={`https://techtalentconnectbackend.vercel.app/uploads/${image}`}
+                  //   alt={`Image ${imgIndex}`}
+                  //   className="service-image"
+                  // />
+                  <img src='/mehandhi.jpg'></img>
                 ))
               ) : (
                 <p>No images available</p>
